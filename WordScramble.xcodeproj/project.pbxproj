@@ -12,6 +12,7 @@
 		05CB8F3B2090EED800AB7E13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CB8F392090EED800AB7E13 /* Main.storyboard */; };
 		05CB8F3D2090EED900AB7E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05CB8F3C2090EED900AB7E13 /* Assets.xcassets */; };
 		05CB8F402090EED900AB7E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CB8F3E2090EED900AB7E13 /* LaunchScreen.storyboard */; };
+		05CB8F482090F09800AB7E13 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 05CB8F472090F09800AB7E13 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		05CB8F3C2090EED900AB7E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05CB8F3F2090EED900AB7E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05CB8F412090EED900AB7E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05CB8F472090F09800AB7E13 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				05CB8F372090EED800AB7E13 /* ViewController.swift */,
 				05CB8F392090EED800AB7E13 /* Main.storyboard */,
 				05CB8F3C2090EED900AB7E13 /* Assets.xcassets */,
+				05CB8F472090F09800AB7E13 /* start.txt */,
 				05CB8F3E2090EED900AB7E13 /* LaunchScreen.storyboard */,
 				05CB8F412090EED900AB7E13 /* Info.plist */,
 			);
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05CB8F402090EED900AB7E13 /* LaunchScreen.storyboard in Resources */,
+				05CB8F482090F09800AB7E13 /* start.txt in Resources */,
 				05CB8F3D2090EED900AB7E13 /* Assets.xcassets in Resources */,
 				05CB8F3B2090EED800AB7E13 /* Main.storyboard in Resources */,
 			);
