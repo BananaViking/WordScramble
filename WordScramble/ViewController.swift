@@ -64,13 +64,46 @@ class ViewController: UITableViewController {
     }
     
     func submit(answer: String) {
+        let lowerAnswer = answer.lowercased()
         
+        if isPossible(word: lowerAnswer) {
+            if isOriginal(word: lowerAnswer) {
+                if isReal(word: lowerAnswer) {
+                    usedWords.insert(answer, at: 0)
+                    
+                    let indexPath = IndexPath(row: 0, section: 0)
+                    tableView.insertRows(at: [indexPath], with: .automatic)
+                }
+            }
+        }
+    }
+    
+    func isPossible(word: String) -> Bool {
+        var tempWord = title!.lowercased()
+        
+        for letter in word {
+            if let position = tempWord.range(of: String(letter)) {
+                tempWord.remove(at: position.lowerBound)
+            } else {
+                return false
+            }
+        }
+        return true
+    }
+    
+    func isOriginal(word: String) -> Bool {
+        return !usedWords.contains(word)
+    }
+    
+    func isReal(word: String) -> Bool {
+        let checker = UITextChecker()  //checks for misspelled words
+        let range = NSMakeRange(0, word.utf16.count)  //utf16 is used here for backwards compatability with objc to handle countring international characters (e.g., é) since it doesn't know about swift strings
+        let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
+        
+        return misspelledRange.location == NSNotFound  //we use this because NSRange predates swift and doesn't know about optionals
     }
 
 }
-
-
-
 
 
 
